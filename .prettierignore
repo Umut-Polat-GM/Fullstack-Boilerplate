@@ -1,0 +1,4 @@
+node_modules
+dist
+package-lock.json
+frontend/src/assets/json

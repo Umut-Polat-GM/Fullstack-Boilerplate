@@ -1,0 +1,33 @@
+{
+  "name": "@app/backend",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Express 5 REST API (MVC, modular) backed by Neon PostgreSQL",
+  "type": "module",
+  "main": "src/server.js",
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#db/*": "./src/db/*",
+    "#lib/*": "./src/lib/*",
+    "#middlewares/*": "./src/middlewares/*",
+    "#utils/*": "./src/utils/*"
+  },
+  "scripts": {
+    "dev": "node --watch-path=src src/server.js",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "@arcjet/node": "^1.16.0",
+    "@neondatabase/serverless": "^1.2.1",
+    "compression": "^1.8.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "morgan": "^1.12.1",
+    "zod": "^4.6.7"
+  }
+}
